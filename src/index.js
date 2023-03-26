@@ -1,5 +1,5 @@
 import './css/styles.css';
-import Notify from 'notiflix';
+import { Notify } from 'notiflix';
 import debounce from 'lodash.debounce';
 import { fetchCountries } from '../fetchCountries';
 
@@ -54,7 +54,7 @@ const createListMarkup = data => {
   return data
     .map(
       ({ name, flags }) =>
-        `<li><img src="${flags.png}" alt="${name.official}" width="60" height="40">${name.official}</li>`
+        `<li><img class="country_element" src="${flags.png}" alt="${name.official}" width="60" height="40">${name.official}</li>`
     )
     .join('');
 };
