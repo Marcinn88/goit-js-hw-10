@@ -12,19 +12,32 @@ body {
   line-height: 1.5;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 #search-box {
   font: inherit;
   padding: 8px;
-  max-width: 320px;
+  width: 522px;
   margin-bottom: 16px;
+  background-color: rgb(238, 238, 238);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+#search-box:hover,
+#search-box:focus {
+  background-color: rgb(255, 255, 255);
 }
 
 .country-list {
   list-style: none;
   padding: 10px;
   font-size: 30px;
+  width: 800px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 .country-list img {
   border: #e4e4e4 solid 1px;
@@ -34,6 +47,8 @@ body {
   width: 522px;
   padding: 10px;
   font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .country-info img {
   width: 500px;
